@@ -38,10 +38,13 @@ Endpoint: `POST https://api.apimart.ai/v1/images/generations` (OpenAI-compatible
 <!-- pricing:model:start -->
 | Output | List price | Effective price |
 | --- | --- | --- |
-| default | $0.0375 | $0.03 |
-| 4K | $0.05 | $0.04 |
+| default | 0.1 | 0.08 |
+| 1MP | 0.07 | 0.056 |
+| 2MP | 0.1 | 0.08 |
+| 3MP | 0.13 | 0.104 |
+| 4MP | 0.16 | 0.128 |
 
-The token-billed official route bills per million tokens instead: `text_input` $1.60, `cached_text_input` free, `image_input` $1.60, `cached_image_input` free, `text_output` $9.60, `image_output` $96.00.
+
 <!-- pricing:model:end -->
 
 Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-033caa) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
@@ -102,6 +105,17 @@ Runnable versions: [`examples/`](examples). The task lifecycle is `pending → p
 **How do I get a key?**
 
 Use the [Get an API key](https://go.apimart.ai/k-c5155d) link — $1 minimum top-up, no plan required.
+
+<!-- related-repos:auto -->
+## Related repositories
+
+- **Same model, this language** — the other half of this pair: [flux-2-max-prompts-fr](https://github.com/apimartg583b51/flux-2-max-prompts-fr)
+- **Same model, other languages** — 9 more language builds: 中文 [flux-2-max-api-cn](https://github.com/apimartg583b51/flux-2-max-api-cn) · Deutsch [flux-2-max-api-de](https://github.com/nk7pvzvbm3b8/flux-2-max-api-de) · Español [flux-2-max-api-es](https://github.com/xmob24gstm0hwf/flux-2-max-api-es) · Relay/gateway [flux-2-max-api-gateway](https://github.com/apimartpzjt/flux-2-max-api-gateway) · Bahasa [flux-2-max-api-id](https://github.com/rtkz3/flux-2-max-api-id) · 日本語 [flux-2-max-api-ja](https://github.com/nbkj6/flux-2-max-api-ja) · 한국어 [flux-2-max-api-ko](https://github.com/ibmf1yp-x2df/flux-2-max-api-ko) · Português [flux-2-max-api-pt](https://github.com/j3jxmbmj/flux-2-max-api-pt) · Русский [flux-2-max-api-ru](https://github.com/d79bcrw6n9kd/flux-2-max-api-ru)
+- **More models in this language** — [midjourney-api-fr](https://github.com/apimartt1q/midjourney-api-fr) · [gemini-2-5-flash-image-preview-api-fr](https://github.com/haftslut7ha/gemini-2-5-flash-image-preview-api-fr) · [nano-banana-api-fr](https://github.com/f84q06w110/nano-banana-api-fr) · [gemini-3-1-flash-image-preview-api-fr](https://github.com/ok71ckyc/gemini-3-1-flash-image-preview-api-fr) · [nano-banana-2-api-fr](https://github.com/ms0p12t/nano-banana-2-api-fr) · [gemini-3-pro-image-preview-api-fr](https://github.com/w-44vba/gemini-3-pro-image-preview-api-fr)
+- **Topic hubs** — every build of this model, all languages: [flux-2-max](https://github.com/topics/flux-2-max) · [flux-2-max-api](https://github.com/topics/flux-2-max-api)
+
+This repository is one build in a cross-linked set of API guides for the same model family; each language build links back to the others.
+<!-- /related-repos:auto -->
 
 ## Attributed links (how this repository is measured)
 
